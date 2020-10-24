@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Convensor de Moeda</h1>
-    </header>
-    <form>
-      <div>
-        <label for="inCurrency">Converter de:</label>
-        <select name="" id="inCurrency">
-          <option value="BRL">BRL</option>
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-        </select>
-      </div>
+    <main>
+      <h1>Convert JS</h1>
+      <form>
+        <div>
+          <div>
+            <label for="inCurrency">Converter de:</label>
+            <select name="" id="inCurrency">
+              <option value="BRL">BRL</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+          <div>
+            <label for="forCurrency">Para:</label>
+            <select name="" id="forCurrency">
+              <option value="USD">USD</option>
+              <option value="BRL">BRL</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+        </div>
 
-      <div>
-        <label for="forCurrency">Para:</label>
-        <select name="" id="forCurrency">
-          <option value="USD">USD</option>
-          <option value="BRL">BRL</option>
-          <option value="EUR">EUR</option>
-        </select>
+        <div>
+          <label for="">Digite o valor</label>
+          <input id="value" type="text" />
+        </div>
+        <button type="submit">Converter</button>
+      </form>
+      <div class="result">
+        <span id="result">Resultado</span>
       </div>
-
-      <div>
-        <label for="">Digite o valor</label>
-        <input id="value" type="number" />
-      </div>
-      <button type="submit">Converter</button>
-    </form>
-    <div class="result">
-      <span id="result">Resultado</span>
-    </div>
-    <script src="script.js"></script>
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>
