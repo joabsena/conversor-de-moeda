@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+}
+
+header h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+.result {
+  margin-top: 50px;
+  text-align: center;
+  color: red;
+}
